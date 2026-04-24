@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAMES GAME</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="flames_icon.png">
+</head>
+<body>
+    <div class="mesh-bg"></div>
+    <div class="container glass-panel">
+        <div class="title-wrapper">
+            <h1 class="flames-title">
+                <span class="hover-letter" data-tooltip="Friends">F</span>
+                <span class="hover-letter" data-tooltip="Love">L</span>
+                <span class="hover-letter" data-tooltip="Affection">A</span>
+                <span class="hover-letter" data-tooltip="Marriage">M</span>
+                <span class="hover-letter" data-tooltip="Enemy">E</span>
+                <span class="hover-letter" data-tooltip="Siblings">S</span>
+            </h1>
+        </div>
+        <p class="subtitle">Discover your relationship destiny</p>     
+        
+        <div class="input-container">
+            <div class="input-group">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="input-icon"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <input type="password" id="name1" placeholder=" " autocomplete="off">
+                <label for="name1">Enter your name</label>
+            </div>
+            
+            <div class="input-group">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="input-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                <input type="password" id="name2" placeholder=" " autocomplete="off">
+                <label for="name2">Favorite person's name</label>
+            </div>
+        </div>
+
+        <button class="primary-btn" onclick="calculateFLAMES()">
+            <span class="btn-text">Reveal Destiny</span>
+            <div class="btn-glow"></div>
+            <div class="loader"></div>
+        </button>
+        
+        <div class="result-wrapper">
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
